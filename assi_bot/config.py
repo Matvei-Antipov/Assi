@@ -1,1 +1,1 @@
-TOKEN = 'token'
+TOKEN = 'placeholder'

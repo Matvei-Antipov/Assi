@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/main.css">
+    <title>Ласкаво просиом до Assi</title>
+</head>
+<body>
+    <header>
+        <svg width="45px" height="45px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" id="icon">
+            <g>
+                <circle cx="16" cy="16" fill="none" r="15" stroke="#F8F8F8" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+                <path d="M26,27 c0-5.523-4.477-10-10-10 h0 c-5.523,0-10,4.477-10,10 v0" fill="none" stroke="#F8F8F8" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+                <circle cx="16" cy="11" fill="none" r="6" stroke="#F8F8F8" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+            </g>
+        </svg>
+        <p>20.034</p>
+        <svg class="svg-icon" style="width:1em;height:1em;vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <path d="M942.973592 203.240891c3.541663-6.385431 5.4225-13.007245 5.4225-19.799952 0-52.163033-109.947088-94.450139-245.571998-94.450139-135.622864 0-245.569952 42.287105-245.569952 94.450139 0 6.791683 1.879813 13.413498 5.4225 19.799952-3.200902 1.512447-5.4225 4.76042-5.4225 8.535397l0 156.522869c-38.169321-9.399067-83.543741-14.848173-132.22958-14.848173-135.623887 0-245.567905 42.287105-245.567905 94.450139 0 6.791683 1.879813 13.413498 5.421476 19.798928-3.200902 1.511423-5.421476 4.76042-5.421476 8.53642l0 377.799532c0 3.225461 1.617847 6.069229 4.084015 7.773034 21.045315 43.940768 121.150244 77.231989 241.48389 77.231989 120.335692 0 220.441645-33.291221 241.485937-77.233012 2.466168-1.703805 4.084015-4.547573 4.084015-7.772011l0-62.076824c38.168298 9.400091 83.541695 14.852266 132.22958 14.852266 120.335692 0 220.444714-33.292244 241.487983-77.234035 2.465145-1.703805 4.082992-4.546549 4.082992-7.770987L948.395068 211.775264C948.396091 208.001311 946.175517 204.752314 942.973592 203.240891zM325.024561 391.230426c114.76072 0 207.789487 25.372877 207.789487 56.669674 0 31.298843-93.02979 56.669674-207.789487 56.669674-114.758674 0-207.78744-25.370831-207.78744-56.669674C117.237121 416.603303 210.265888 391.230426 325.024561 391.230426z"/>
+        </svg>
+    </header>
+    <main>
+        <div class="main-div">
+            <ul>
+                <li><a href="#"><svg>…</svg>text</a></li>
+                <li><a href="#"><svg>…</svg>text</a></li>
+                <li><a href="#"><svg>…</svg>text</a></li>
+                <li><a href="#"><svg>…</svg>text</a></li>
+            </ul>
+        </div>
+        <div class="main-div">
+            <a href="#"><svg>…</svg>Линк на расписание</a>
+            <button id="open-schedule"><div><svg>…</svg></div></button>
+        </div>
+        <div id="asset">
+            <a href="#" class="asset"><svg>…</svg></a>
+            <a href="#" class="asset"><svg>…</svg></a>
+        </div>
+    </main>
+    <div id="schedule">
+        <img src="/static/schedule.jpg">
+        <button id="close-schedule">Закрити</button>
+    </div>
+    <script>
+        window.onload = function() {
+            document.querySelector("#open-schedule").addEventListener("click", ()=> {
+                document.getElementById('schedule').style.display = 'flex';
+            });
+            document.querySelector("#close-schedule").addEventListener("click", ()=> {
+                document.getElementById('schedule').style.display = 'none';
+            });
+        };
+    </script>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-element vector"><a href="#"><svg>…</svg></a></div>
+            <div class="footer-element mbutton"><a href="#" class="footer-btn"><svg>…</svg></a></div>
+            <div class="footer-element leadboard"><a href="#" class="footer-btn"><svg>…</svg></a></div>
+        </div>
+    </footer>
+</body>
+</html>
